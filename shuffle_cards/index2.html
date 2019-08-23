@@ -10,7 +10,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12@sm">
-          <h1>Putting the Numbers to the Ground</h1>
+          <h1>Putting the Numbers into Context</h1>
         </div>
       </div>
     </div>
@@ -25,25 +25,39 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12@sm filters-group-wrap">
+        <div class="col-10@sm filters-group-wrap">
           <div class="filters-group">
-            <p class="filter-label">Filter by SDG</p>
+            <p class="filter-label">Filter by SDG or by theme</p>
             <div class="btn-group filter-options">
-              <button class="btn btn--primary" data-group="1">1</button>
-              <button class="btn btn--primary" data-group="2">2</button>
-              <button class="btn btn--primary" data-group="3">3</button>
-              <button class="btn btn--primary" data-group="4">4</button>
-              <button class="btn btn--primary" data-group="5">5</button>
+              <button class="btn btn--primary" data-group="1" style="background-color:#e5243b;color:#ffffff"><i class="ux ico-sdg1" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="2" style="background-color:#dda63a;color:#ffffff"><i class="ux ico-sdg2" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="3" style="background-color:#4C9F38;color:#ffffff"><i class="ux ico-sdg3" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="4" style="background-color:#C5192D;color:#ffffff"><i class="ux ico-sdg4" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="5" style="background-color:#FF3A21;color:#ffffff"><i class="ux ico-sdg5" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="6" style="background-color:#26BDE2;color:#ffffff"><i class="ux ico-sdg6" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="7" style="background-color:#FCC30B;color:#ffffff"><i class="ux ico-sdg7" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="8" style="background-color:#A21942;color:#ffffff"><i class="ux ico-sdg8" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="9" style="background-color:#FD6925;color:#ffffff"><i class="ux ico-sdg9" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="10" style="background-color:#DD1367;color:#ffffff"><i class="ux ico-sdg10" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="11" style="background-color:#FD9D24;color:#ffffff"><i class="ux ico-sdg11" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="12" style="background-color:#BF8B2E;color:#ffffff"><i class="ux ico-sdg12" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="13" style="background-color:#3F7E44;color:#ffffff"><i class="ux ico-sdg13" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="14" style="background-color:#0A97D9;color:#ffffff"><i class="ux ico-sdg14" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="15" style="background-color:#56C02B;color:#ffffff"><i class="ux ico-sdg15" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="16" style="background-color:#00689D;color:#ffffff"><i class="ux ico-sdg16" aria-hidden="true" style="font-size:20px;"></i></button>
+              <button class="btn btn--primary" data-group="17" style="background-color:#19486A;color:#ffffff"><i class="ux ico-sdg17" aria-hidden="true" style="font-size:20px;"></i></button>
+              <p class="filter-label"><br/></p>
+              <button class="btn btn--primary" data-group="homeless" style="border-color:#e8e8e8">Homelessness</button>
+              <button class="btn btn--primary" data-group="jobs" style="border-color:#e8e8e8">Jobs</button>
+              <button class="btn btn--primary" data-group="sustainability" style="border-color:#e8e8e8">Sustainability</button>
+              <button class="btn btn--primary" data-group="transportation" style="border-color:#e8e8e8">Transportation</button>
+              <button class="btn btn--primary" data-group="housing" style="border-color:#e8e8e8">Housing</button>
+              <button class="btn btn--primary" data-group="safety" style="border-color:#e8e8e8">Safety</button>
+              <button class="btn btn--primary" data-group="health" style="border-color:#e8e8e8">Heatlh</button>
+              <button class="btn btn--primary" data-group="youth" style="border-color:#e8e8e8">Youth</button>
             </div>
-          </div>
-          <div class="filters-group">
-            <p class="filter-label">Filter by Theme </p>
-            <div class="btn-group filter-options">
-              <button class="btn btn--primary" data-group="homeless">Homelessness</button>
-              <button class="btn btn--primary" data-group="education">Education/Jobs</button>
-              <button class="btn btn--primary" data-group="housing">Housing</button>
             </div>
-          </div>
+          <!-- 
           <fieldset class="filters-group">
             <legend class="filter-label">Sort</legend>
             <div class="btn-group sort-options">
@@ -58,6 +72,7 @@
               </label>
             </div>
           </fieldset>
+          -->
         </div>
       </div>
     </div>
@@ -65,146 +80,367 @@
     <div class="container">
       <div id="grid" class="row my-shuffle-container">
         <!--Goal 1-->
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["1","education"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["1","jobs"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">$15 Minimum Wage</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://wagesla.lacity.org/" target="_blank" rel="noopener">$15 Minimum Wage</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Progressively raising the minimum wage in L.A. to inrease the incomes of L.A.’s poorest workers </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg1" aria-hidden="true" style="font-size:40px;color:#e5243b"></i>
+                <p class="picture-item__tags hidden@xs">jobs</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["1"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["1","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Resilient Los Angeles</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://www.lamayor.org/Resilience" target="_blank" rel="noopener">Resilient Los Angeles</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Focusing on decreasing the impact of disasters on L.A.’s poorest and most vulnerable </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg1" aria-hidden="true" style="font-size:40px;color:#e5243b"></i>
+                <p class="picture-item__tags hidden@xs"> safety</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <!--Goal 2-->
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["2"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["1","jobs","homeless"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Health Atlas</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://www.lacity.org/for-residents/popular-information/comprehensive-homeless-strategy-implementation" target="_blank" rel="noopener">Comprehensive Homeless Strategy</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p>  Helping people experiencing homelessness to move off the streets and into employment </p>
+                <i class="ux ico-sdg1" aria-hidden="true" style="font-size:40px;color:#e5243b"></i>
+                <p class="picture-item__tags hidden@xs">jobs | homelessness</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <!--Goal 2-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["2","health"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="http://healthyplan.la/the-health-atlas/" target="_blank" rel="noopener">Health Atlas</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Creates a data informed analysis of health issues in L.A., including food systems </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg2" aria-hidden="true" style="font-size:40px;color:#dda63a"></i>
+                <p class="picture-item__tags hidden@xs">health</p>
               </div>
             </div>
           </div>
         </figure>
 
         <!--Goal 3-->
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["3"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["3","health"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">City of L.A. Public Health Task Force</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://www.thinkhealthla.org/index.php?module=Tiles&controller=index&action=display&alias=CPPHTF" target="_blank" rel="noopener">City of L.A. Public Health Task Force</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Establishd in July 2019 to oversee all public health initiatives, including illegal dumping</p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg3" aria-hidden="true" style="font-size:40px;color:#4c9f38"></i>
+                <p class="picture-item__tags hidden@xs">health</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["3"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["3","9","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Great Streets Initiative</a></figcaption>
+              <figcaption class="picture-item__title"><a href="http://lagreatstreets.org/" target="_blank" rel="noopener">Great Streets Initiative</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p>  Improves street safety and walkability in targeted neighborhoods </p>
-                <p class="picture-item__tags hidden@xs"></p>
-                <i class="ux ico-sdg3" aria-hidden="true" style="font-size:40px;color:#4c9f38"></i>
+                <i class="ux ico-sdg3" aria-hidden="true" style="font-size:40px;color:#4c9f38"></i> <i class="ux ico-sdg9" aria-hidden="true" style="font-size:40px;color:#fd6925"></i>
+                <p class="picture-item__tags hidden@xs">safety</p>
               </div>
             </div>
           </div>
         </figure>
 
         <!--Goal 4-->
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["4"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["4","jobs"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Support for Hire L.A.’s Youth</a></figcaption>
+              <figcaption class="picture-item__title"><a href="http://www.hirelayouth.com/intro.html" target="_blank" rel="noopener">Support for Hire L.A.’s Youth</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Works to ensure that young people have the necessary skills for obtaining jobs in L.A. </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg4" aria-hidden="true" style="font-size:30px;color:#c5192d"></i>
+                <p class="picture-item__tags hidden@xs">jobs</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["4"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["4","youth"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Mayor’s Young Ambassador Program</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://www.lamayor.org/mayor%E2%80%99s-young-ambassador-program" target="_blank" rel="noopener">Mayor’s Young Ambassador Program</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Free travel program to connect young Angelenos with the international community </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg4" aria-hidden="true" style="font-size:30px;color:#c5192d"></i>
+                <p class="picture-item__tags hidden@xs">youth</p>
               </div>
             </div>
           </div>
         </figure>
 
         <!--Goal 5-->
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["5"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["5","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">MyVoiceLA</a></figcaption>
+              <figcaption class="picture-item__title"><a href="https://myvoicela.org/" target="_blank" rel="noopener">MyVoiceLA</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> Enables L.A. city workers to file harassment and discrimination claims easily and efficiently </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg5" aria-hidden="true" style="font-size:40px;color:#ff3a21"></i>
+                <p class="picture-item__tags hidden@xs">safety</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["5"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["5","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
           <div class="picture-item__inner">
             <div class="picture-item__details">
-              <figcaption class="picture-item__title"><a href="https://unsplash.com/photos/zshyCr6HGw0" target="_blank" rel="noopener">Domestic Violence Services</a></figcaption>
+              <figcaption class="picture-item__title"><a href="http://lapdonline.org/get_informed/content_basic_view/23671" target="_blank" rel="noopener">Domestic Violence Services</a></figcaption>
             </div>
             <div class="aspect aspect--16x9">
               <div class="aspect__inner">
                 <p> The LAPD offers a variety of services to individuals experiencing domestic violence </p>
-                <p class="picture-item__tags hidden@xs"></p>
                 <i class="ux ico-sdg5" aria-hidden="true" style="font-size:40px;color:#ff3a21"></i>
+                <p class="picture-item__tags hidden@xs">safety</p>
               </div>
             </div>
           </div>
         </figure>
 
-        <div class="col-1@sm col-1@xs my-sizer-element"></div>
+        <!--Goal 6-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["6","sustainability"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://ladwp.com/ladwp/faces/wcnav_externalId/a-w-c-droughtinfo?_adf.ctrl-state=13p48dlb2e_4&_afrLoop=149268235443954&_afrWindowMode=0&_afrWindowId=null#%40%3F_afrWindowId%3Dnull%26_afrLoop%3D149268235443954%26_afrWindowMode%3D0%26_adf.ctrl-state%3Dnxiadrtwc_4" target="_blank" rel="noopener">Emergency Drought Response</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> Cuts L.A.’s water usage and creates policies to alleviate the impact of L.A.’s drought </p>
+                <i class="ux ico-sdg6" aria-hidden="true" style="font-size:40px;color:#26bde2"></i>
+                <p class="picture-item__tags hidden@xs">sustainability</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["6","15","sustainability"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="http://lariver.org/" target="_blank" rel="noopener">LARiverWorks</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> Dedicated to implementing cross-cutting L.A. River goals across jurisdictions </p>
+                <i class="ux ico-sdg6" aria-hidden="true" style="font-size:40px;color:#26bde2"></i><i class="ux ico-sdg15" aria-hidden="true" style="font-size:40px;color:#56c02b"></i>
+                <p class="picture-item__tags hidden@xs">sustainability</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 7-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["7","sustainability"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.smartgrid.gov/project/los_angeles_department_water_and_power_smart_grid_regional_demonstration.html" target="_blank" rel="noopener">Smart Grid L.A.</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> the LADWP’s program to upgrade its power grid with new advanced communications technologies </p>
+                <i class="ux ico-sdg7" aria-hidden="true" style="font-size:40px;color:#fcc30b"></i>
+                <p class="picture-item__tags hidden@xs">sustainability</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 8-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["8","jobs"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://finance.lacity.org/tax-incentives-and-exemptions" target="_blank" rel="noopener">Business Tax Cut</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> provides a number of tax cuts and exemptions to further business and economic growth in L.A. </p>
+                <i class="ux ico-sdg8" aria-hidden="true" style="font-size:40px;color:#a21942"></i>
+                <p class="picture-item__tags hidden@xs">jobs</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 9-->
+
+        <!--Goal 10-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["10","jobs","transportation"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.lamayor.org/%E2%80%98new-roads-second-chances%E2%80%99-connects-hundreds-formerly-incarcerated-angelenos-employment" target="_blank" rel="noopener">New Roads to Second Chances</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> offers people on parole or probation transitional jobs beautifying Los Angeles’ freeways</p>
+                <i class="ux ico-sdg10" aria-hidden="true" style="font-size:40px;color:#dd1367"></i>
+                <p class="picture-item__tags hidden@xs">jobs | transportation</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 11-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["11","transportation"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="http://theplan.metro.net/" target="_blank" rel="noopener">Measure M</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> Permanent bond measure to upport public transportation infrastructure </p>
+                <i class="ux ico-sdg11" aria-hidden="true" style="font-size:40px;color:#fd9d24"></i>
+                <p class="picture-item__tags hidden@xs">transportation</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["11","transportation","youth"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.ladottransit.com/studentsridefree/" target="_blank" rel="noopener">Dash to Class</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> LADOT Transit offers free rides on DASH Buses for students in the City of Los Angeles. </p>
+                <i class="ux ico-sdg11" aria-hidden="true" style="font-size:40px;color:#fd9d24"></i>
+                <p class="picture-item__tags hidden@xs">transportation | youth</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 12-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["12","sustainability","youth"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://ita.lacity.org/about-ita/ourcycle-la" target="_blank" rel="noopener">OurCycle L.A.</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> recycles old computers by redistributing them to families and students without access to personal computers </p>
+                <i class="ux ico-sdg12" aria-hidden="true" style="font-size:40px;color:#bf8b2e"></i>
+                <p class="picture-item__tags hidden@xs"> sustainability | youth</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 13-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["13","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://empowerla.org/el-nino-wet-weather-preparedness/" target="_blank" rel="noopener">El Niño Preparedness, Response, and Recovery</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> prepares for extreme El Niño conditions that may arise in coming years as a result fo climate change </p>
+                <i class="ux ico-sdg13" aria-hidden="true" style="font-size:40px;color:#3f7e44"></i>
+                <p class="picture-item__tags hidden@xs">safety</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 14-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["14","sustainability"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.lacitysan.org/san/faces/home/portal/s-lsh-es/s-lsh-es-si/s-lsh-es-si-bd;jsessionid=QWO0_dR3-AO0Mf6ztspC6_ATzGxDM3Vf2u0FdkZjo1oyt1SbO_UX!-309283975!-2009047303?_afrLoop=7479598425670522&_afrWindowMode=0&_afrWindowId=null&_adf.ctrl-state=pmcrl7vce_1#!%40%40%3F_afrWindowId%3Dnull%26_afrLoop%3D7479598425670522%26_afrWindowMode%3D0%26_adf.ctrl-state%3Dpmcrl7vce_5" target="_blank" rel="noopener">L.A. Biodiversity Index</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> reports on biodiversity in Los Angeles and analyzes critical areas for greater biodiversity protection </p>
+                <i class="ux ico-sdg14" aria-hidden="true" style="font-size:40px;color:#0a97d9"></i>
+                <p class="picture-item__tags hidden@xs">sustainability</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 15 **see Goal 6**-->
+
+        <!--Goal 16-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["16","safety"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.lafd.org/fsla/stations-map" target="_blank" rel="noopener">FireStat L.A.</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> works to reform the fire department, decrease response times, and increase department accountability </p>
+                <i class="ux ico-sdg16" aria-hidden="true" style="font-size:40px;color:#00689d"></i>
+                <p class="picture-item__tags hidden@xs">safety</p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <!--Goal 17-->
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["17"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.lacounty.gov/census2020/" target="_blank" rel="noopener">2020 Census Preparations</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p> works with federal agencies to prepare Los Angeles for the collection of data through the US Census </p>
+                <i class="ux ico-sdg17" aria-hidden="true" style="font-size:40px;color:#19486a"></i>
+                <p class="picture-item__tags hidden@xs"></p>
+              </div>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='["17"]' data-date-created="2017-04-30" data-title="Lake Walchen">
+          <div class="picture-item__inner">
+            <div class="picture-item__details">
+              <figcaption class="picture-item__title"><a href="https://www.lamayor.org/international-affairs" target="_blank" rel="noopener">International Trade Missions</a></figcaption>
+            </div>
+            <div class="aspect aspect--16x9">
+              <div class="aspect__inner">
+                <p>  develops relationships and opportunities between Los Angeles and foreign government and business leaders </p>
+                <i class="ux ico-sdg17" aria-hidden="true" style="font-size:40px;color:#19486a"></i>
+                <p class="picture-item__tags hidden@xs"></p>
+              </div>
+            </div>
+          </div>
+        </figure>
       </div>
     </div>
     <script src="script.js"> </script>

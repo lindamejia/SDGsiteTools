@@ -60,12 +60,12 @@ p {
 }
 
 .picture-item {
-  height: 220px;
   margin-top: 24px;
 }
 .picture-item img {
   display: block;
   width: 100%;
+  overflow: auto;
 }
 
 @supports ((-o-object-fit: cover) or (object-fit: cover)) {
@@ -85,7 +85,8 @@ p {
   position: relative;
   height: 100%;
   overflow: hidden;
-  background: #ecf0f1 /*this is where you change the background color of each individual box*/;
+  background: #e8e8e8 /*this is where you change the background color of each individual box*/; 
+  /*border-style: solid;*/
 }
 
 .picture-item__details {
@@ -111,7 +112,8 @@ p {
 .picture-item__tags {
   flex-shrink: 1;
   text-align: right;
-  margin: 0;
+  margin: 10px;
+  color: #95a5a6;
 }
 
 @media screen and (min-width: 768px) {
@@ -159,7 +161,8 @@ p {
   padding: 0;
   margin-top: 0;
   margin-bottom: 4px;
-  color: #95a5a6;
+  color: #95a5a6; /*change color of "Search", "Filter by SDG", "Filter by Theme"*/
+  font-size: 1.1em;
 }
 
 .filters-group {
@@ -251,7 +254,7 @@ p {
 
 .btn--primary {
   color: #3498db;
-  border-color: #3498db;
+  border-color: #ffffff; /*change color of the border of the filter box*/
   background-color: rgba(52, 152, 219, 0);
 }
 
@@ -404,7 +407,7 @@ p {
 
 .aspect__inner {
   position: absolute;
-  top: 0;
+  top: -20px; /*adjust distance between title and text*/
   right: 10px;
   bottom: 0;
   left: 10px;
