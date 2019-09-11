@@ -146,7 +146,6 @@ class Demo {
 }
 
 
-
 document.addEventListener("DOMContentLoaded", () => {
   window.demo = new Demo(document.getElementById("grid"));
 });

@@ -7,7 +7,7 @@
 
 body {
   color: #34495e;
-  padding-bottom: 100px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 figure {
@@ -22,11 +22,14 @@ img {
 
 a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 a,
 a:visited {
-  color: #3498db;
+  color: #34495e;
+  font-weight: bold;
+
 }
 
 a:hover {
@@ -42,6 +45,7 @@ p {
   line-height: 1.4;
 }
 
+
 /*
   Shuffle needs either relative or absolute positioning on the container
   It will set it for you, but it'll cause another style recalculation and layout.
@@ -49,7 +53,7 @@ p {
  */
 .my-shuffle-container {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /*color: #db532a;*//*to change color of description text*/
 }
 
@@ -57,11 +61,13 @@ p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
+  
 }
 
 .picture-item {
   margin-top: 24px;
 }
+
 .picture-item img {
   display: block;
   width: 100%;
@@ -85,8 +91,10 @@ p {
   position: relative;
   height: 100%;
   overflow: hidden;
-  background: #e8e8e8 /*this is where you change the background color of each individual box*/; 
-  /*border-style: solid;*/
+  background: white;/*this is where you change the background color of each individual box*/; 
+  /* border: solid 2px #e8e8e8; */
+  box-shadow: 1px 17px 11px -15px rgba(0,0,0,0.35);
+ 
 }
 
 .picture-item__details {
@@ -95,18 +103,21 @@ p {
   justify-content: space-between;
   width: 100%;
   padding: 1em;
+  text-align:center;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .picture-item__description {
   width: 100%;
   padding: 0 2em 1em 1em;
-  margin: 0;
+  margin:0;
+  
 }
 
 .picture-item__title {
   flex-shrink: 1;
-  margin-right: 4px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .picture-item__tags {
@@ -169,12 +180,17 @@ p {
   padding: 0;
   margin: 0 0 4px;
   border: 0;
+  position: relative;
+    overflow:hidden;
+    
 }
 
 @media screen and (min-width: 768px) {
   .filters-group-wrap {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    overflow:hidden;
   }
 }
 .btn-group:after, .btn-group:before {
@@ -216,7 +232,7 @@ p {
   border-radius: 3px;
   border: 1px solid #34495e;
   color: #34495e;
-  font-size: 1rem;
+  font-size: 14px;
   background-color: rgba(52, 73, 94, 0);
   transition: .2s ease-out;
   cursor: pointer;
@@ -256,6 +272,7 @@ p {
   color: #3498db;
   border-color: #ffffff; /*change color of the border of the filter box*/
   background-color: rgba(52, 152, 219, 0);
+  margin: .25rem;
 }
 
 @media (-moz-touch-enabled: 0), (pointer: fine) {
@@ -282,17 +299,18 @@ p {
 
 @media screen and (max-width: 767px) {
   .btn {
-    font-size: 0.875rem;
+    font-size: 15px;
   }
 }
 .textfield {
   -webkit-appearance: none;
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid #95a5a6;
-  border-radius: 4px;
+  height:40px;
+  border: 1px solid #95a5a6;
+  border-radius: 2px;
   padding: .5em;
-  font-size: 1rem;
+  font-size: 2rem;
   color: #34495e;
   transition: 0.15s;
 }
@@ -373,11 +391,13 @@ p {
 
 .container:after {
   clear: both;
+
 }
 
 .row {
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .row:after,
@@ -400,21 +420,20 @@ p {
 .aspect {
   position: relative;
   width: 100%;
-  height: 100%;
-  padding-bottom: 100%;
-  overflow: hidden;
+
 }
 
 .aspect__inner {
   position: absolute;
-  top: -20px; /*adjust distance between title and text*/
-  right: 10px;
-  bottom: 0;
-  left: 10px;
+  top: -55px; /*adjust distance between title and text*/
+  right: 25px;
+  bottom: 0px;
+  left: 25px;
 }
 
 .aspect--16x9 {
-  padding-bottom: 100%;
+  margin-bottom: 100%;
+  top:45px;
 }
 
 .col-1\@xs,
