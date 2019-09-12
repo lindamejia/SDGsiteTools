@@ -7,7 +7,6 @@
 
 body {
   color: #34495e;
-  padding-bottom: 100px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -28,7 +27,7 @@ a {
 
 a,
 a:visited {
-  color: #3498db;
+  color: #34495e;
   font-weight: bold;
 
 }
@@ -46,6 +45,14 @@ p {
   line-height: 1.4;
 }
 
+.imageIcons{
+  height: 75px;
+  width:75px;
+  margin-bottom:10px;
+  display:inline;
+}
+
+
 /*
   Shuffle needs either relative or absolute positioning on the container
   It will set it for you, but it'll cause another style recalculation and layout.
@@ -53,7 +60,7 @@ p {
  */
 .my-shuffle-container {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /*color: #db532a;*//*to change color of description text*/
 }
 
@@ -61,11 +68,13 @@ p {
   position: absolute;
   opacity: 0;
   visibility: hidden;
+  
 }
 
 .picture-item {
   margin-top: 24px;
 }
+
 .picture-item img {
   display: block;
   width: 100%;
@@ -89,8 +98,10 @@ p {
   position: relative;
   height: 100%;
   overflow: hidden;
-  background: #e8e8e8 /*this is where you change the background color of each individual box*/; 
-  /*border-style: solid;*/
+  background: white;/*this is where you change the background color of each individual box*/; 
+  /* border: solid 2px #e8e8e8; */
+  box-shadow: 1px 17px 11px -15px rgba(0,0,0,0.35);
+ 
 }
 
 .picture-item__details {
@@ -101,7 +112,7 @@ p {
   padding: 1em;
   text-align:center;
   display: inline-block;
-  
+  margin-top: 1rem;
 }
 
 .picture-item__description {
@@ -295,17 +306,18 @@ p {
 
 @media screen and (max-width: 767px) {
   .btn {
-    font-size: 0.875rem;
+    font-size: 15px;
   }
 }
 .textfield {
   -webkit-appearance: none;
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid #95a5a6;
-  border-radius: 4px;
+  height:40px;
+  border: 1px solid #95a5a6;
+  border-radius: 2px;
   padding: .5em;
-  font-size: 1rem;
+  font-size: 14px;
   color: #34495e;
   transition: 0.15s;
 }
@@ -373,6 +385,7 @@ p {
   color: #34495e;
 }
 
+
 .container {
   padding-left: 3.5%;
   padding-right: 3.5%;
@@ -415,19 +428,20 @@ p {
 .aspect {
   position: relative;
   width: 100%;
-  height: 100%;
+
 }
 
 .aspect__inner {
   position: absolute;
-  top: 10px; /*adjust distance between title and text*/
-  right: 10px;
-  bottom: 0;
-  left: 10px;
+  top: -55px; /*adjust distance between title and text*/
+  right: 25px;
+  bottom: 0px;
+  left: 25px;
 }
 
 .aspect--16x9 {
-  padding-bottom: 100%;
+  margin-bottom: 100%;
+  top:45px;
 }
 
 .col-1\@xs,
